@@ -25,7 +25,7 @@ The dataset `agri_water_dataset.csv` contains:
 * Anomaly labels for model training
 
 Explore the dataset and train your own model using the provided **Colab file**:
-[Agri Water Dataset & Model Training Colab](https://colab.research.google.com/drive/1Xj8gLcHJGyZXGvzERF8d-XnEBwQeL4f7)
+[Agri Water Dataset & Model Training Colab](https://github.com/classytamil/Agri-monitor-dashboard/blob/main/agri_colab_model_code.py)
 
 ---
 
@@ -118,8 +118,19 @@ python agri_dashboard.py
 
 ## 🖼️ Screenshots
 
-*(Add screenshots here to showcase your dashboard UI)*
 
+<p align="center">
+  <img src="assets/1.png" width="80%">
+</p>
+
+<p align="center">
+  <img src="assets/2.png" width="80%">
+</p>
+
+
+<p align="center">
+  <img src="assets/3.png" width="80%">
+</p>
 
 ---
 
