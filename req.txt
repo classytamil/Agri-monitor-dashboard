@@ -1,7 +1,6 @@
-streamlit
+kivy
 pandas
 scikit-learn
 joblib
 paho-mqtt
-kivy
-dash
+https://github.com/kivy-garden/matplotlib/archive/master.zip
