@@ -6,7 +6,7 @@ from kivy.uix.gridlayout import GridLayout
 from kivy.uix.scrollview import ScrollView
 from kivy.core.window import Window
 from kivy.graphics import Color, RoundedRectangle, Line, Ellipse, Rectangle
-from kivy.garden.matplotlib.backend_kivyagg import FigureCanvasKivyAgg
+from kivy_garden.matplotlib.backend_kivyagg import FigureCanvasKivyAgg
 from kivy.core.text import LabelBase
 import matplotlib.pyplot as plt
 from matplotlib.figure import Figure
@@ -823,11 +823,11 @@ class AgriApp(App):
 if __name__ == "__main__":
     # Check for required dependencies
     try:
-        from kivy.garden.matplotlib import backend_kivyagg
+        from kivy_garden.matplotlib import backend_kivyagg
     except ImportError:
         print("Installing kivy-garden.matplotlib...")
         import os
-        os.system("pip install kivy-garden matplotlib")
-        os.system("garden install matplotlib")
+        import sys
+        os.system(f"{sys.executable} -m pip install https://github.com/kivy-garden/matplotlib/archive/master.zip")
     
     AgriApp().run()
