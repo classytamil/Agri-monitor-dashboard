@@ -811,6 +811,12 @@ class AgriDashboard(BoxLayout):
             self.status_card.update_status(connected)
             
             self.chart_card.update_chart(latest_data["history"])
+            
+            # Update water status
+            self.water_card.update_water_status(
+                latest_data.get("water_needed", False),
+                data.get('soil_moisture_percent', 0)
+            )
         else:
             self.status_card.update_status(False)
 
